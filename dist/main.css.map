@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css","sourcesContent":[]}
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,KACE,SAAY,CACZ,QAAW","file":"main.css","sourcesContent":["body {\r\n  padding: 0px;\r\n  margin: 0px;\r\n}\r\n"]}
