@@ -1,0 +1,21 @@
+.popup-container {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  .content {
+    position: relative;
+    display: flex;
+    background-color: white;
+    margin: 50vh auto;
+    width: 60%;
+    min-height: 150px;
+  }
+  .button-closed {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}

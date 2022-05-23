@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 .article {
   padding-top: 96px;
   display: -webkit-box;
@@ -76,26 +75,4 @@
     padding: 0px;
   }
 }
-
-.my-button-style {
-  background-color: #e4c1ae;
-  color: white;
-  height: 48px;
-  width: 128px;
-  border-radius: 32px;
-  border-style: none;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  padding: 0px;
-  margin: 0px;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1440px;
-}
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=article.css.map */
