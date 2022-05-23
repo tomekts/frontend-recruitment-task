@@ -1,4 +1,13 @@
+@import "./article.scss";
+@import "./button.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 body {
+  font-family: "Roboto", sans-serif;
   padding: 0px;
   margin: 0px;
+  background-color: aquamarine;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
 }
