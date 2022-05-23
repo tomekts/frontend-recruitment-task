@@ -1,21 +1,31 @@
 .popup-container {
   position: absolute;
-  width: 100vw;
+  display: flex;
+  width: 100%;
   height: 100%;
   top: 0px;
   right: 0px;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   .content {
+    p {
+      margin: 0px;
+    }
     position: relative;
-    display: flex;
     background-color: white;
-    margin: 50vh auto;
     width: 60%;
+    margin: auto;
     min-height: 150px;
+    height: fit-content;
   }
   .button-closed {
     position: absolute;
     right: 15px;
     top: 15px;
+    width: 16px;
+    height: 16px;
+  }
+  .button-closed:hover {
+    cursor: pointer;
   }
 }

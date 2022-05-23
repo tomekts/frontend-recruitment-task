@@ -3,16 +3,16 @@ customElements.define(
   class extends HTMLElement {
     connectedCallback() {
       this.classList.add("popup-container");
-      const title = this.getAttribute("title");
       this.firstChild.classList.add("content");
+      this.setAttribute("id", "popup");
       let iconClosed = document.createElement("img");
       iconClosed.setAttribute("alt", "na");
       iconClosed.setAttribute("src", "images/icon/icon_closed.svg");
       iconClosed.classList.add("button-closed");
-      this.firstChild.appendChild(iconClosed);
-
-      //   button.innerHTML = "test";
-      //   button.classList.add("my-button-style");
+      iconClosed.onclick = function () {
+        document.getElementById("popup").style.display = "none";
+      };
+      this.firstChild.appendChild(iconClosed);      
     }
   }
 );
