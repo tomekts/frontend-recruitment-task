@@ -21,16 +21,48 @@ customElements.define(
             <p class="title">${title}</p>
             <p class="content">${content}</p>
             <my-button    
-            click='
-            let doc= document.getElementById("${"count-" + name}")   
-            let count = parseInt(window.localStorage.getItem("${name}"))         
-            doc.innerHTML = count+1;            
-            window.localStorage.setItem("${name}",count+1)
-            document.getElementById("${name}").style.display = "flex";
-            '         
-            title="Button">
+              click='
+              let doc= document.getElementById("${"count-" + name}")   
+              let count = parseInt(window.localStorage.getItem("${name}")) 
+              if(doc){
+                doc.innerHTML= count+1;
+                window.localStorage.setItem("${name}",count+1)
+                document.getElementById("${name}").style.display = "flex";
+                if(doc.innerHTML>4){
+                  document.getElementById("${name}-reset-button").style.display = "block";
+                }else{
+                  document.getElementById("${name}-reset-button").style.display = "none";
+                }
+              }'         
+              title="Button">
             </my-button>
           </div>
+          
+          <my-popup name="${name}"
+            ><div>
+              <p class="popup-alert">Alert!</p>
+              <div class="popup-info">
+                <p>
+                  You have clicked <span id="count-${name}">0</span> <b>times</b> to
+                  related button.
+                </p>
+                <my-button
+                  class="button-reset"
+                  id="${name}-reset-button"              
+                  title="Reset voice"
+                  click='
+                    console.log("tes")
+                    window.localStorage.setItem("${name}",0)
+                    document.getElementById("${"count-" + name}").innerHTML=0
+                    document.getElementById("${name}-reset-button").style.display = "none";
+                  '
+                ></my-button>
+              </div>
+            </div>
+          </my-popup> 
+
+
+
         </div
       `;
       this.innerHTML = article;

@@ -13,6 +13,12 @@ customElements.define(
       iconClosed.onclick = function () {
         document.getElementById(name).style.display = "none";
       };
+      let overlay = document.createElement("div");
+      overlay.classList.add("overlay");
+      this.appendChild(overlay);
+      overlay.onclick = function () {
+        document.getElementById(name).style.display = "none";
+      };
       this.firstChild.appendChild(iconClosed);
     }
   }

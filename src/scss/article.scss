@@ -61,3 +61,33 @@
     padding: 0px;
   }
 }
+.popup-alert {
+  font-size: 42px;
+  font-weight: 700;
+  padding-left: 96px;
+  padding-top: 56px;
+}
+.popup-info {
+  display: flex;
+  margin-left: 96px;
+  margin-top: 24px;
+  p {
+    padding-bottom: 56px;
+  }
+  .button-reset {
+    margin-left: 10px;
+    margin-top: -12px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .popup-info {
+    display: block;
+    p {
+    }
+    .button-reset {
+      padding-bottom: 16px;
+      margin-left: 0px;
+    }
+  }
+}
