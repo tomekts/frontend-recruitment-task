@@ -1,4 +1,4 @@
-customElements.define("my-article",class extends HTMLElement{connectedCallback(){var t=this.getAttribute("content"),e=this.getAttribute("image"),n=this.getAttribute("name"),i=(this.getAttribute("image-small"),window.localStorage.getItem(n)||window.localStorage.setItem(n,0),this.getAttribute("title"));this.innerHTML=`
+customElements.define("my-article",class extends HTMLElement{connectedCallback(){var t=this.getAttribute("content"),e=this.getAttribute("image"),n=this.getAttribute("name"),i=(window.localStorage.getItem(n)||window.localStorage.setItem(n,0),this.getAttribute("title"));this.innerHTML=`
         <div class="article">
           <div class="article-section-image">
             <img src="${e}" alt="picture"></img>

@@ -5,8 +5,6 @@ customElements.define(
       const content = this.getAttribute("content");
       const image = this.getAttribute("image");
       const name = this.getAttribute("name");
-      const imegeSmall = this.getAttribute("image-small");
-      const imageUrl = "s";
       let countLocal = window.localStorage.getItem(name);
       if (!countLocal) {
         window.localStorage.setItem(name, 0);
